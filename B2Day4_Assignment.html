@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Question 1</h3>
+<h5>Create a webpage containing an image and three buttons <br>
+A. On click of the second button a change the existing image to a new image <br>
+B. On click of the third button change it once again <br>
+C. On click of first, the first image should come back</h5>
+<h4>Solution :</h4>
+<img id="Pn" src="https://cdn.pixabay.com/photo/2017/07/18/18/24/dove-2516641_1280.jpg" alt="Pigeon" width="50%" height="50%"><br>
+<button onclick="document.getElementById('Pn').src='https:/cdn.pixabay.com/photo/2017/07/18/18/24/dove-2516641_1280.jpg'">First Image</button>
+<button onclick="document.getElementById('Pn').src='https:/cdn.pixabay.com/photo/2018/03/27/17/25/cat-3266673_1280.jpg'">Second Image</button>
+<button onclick="document.getElementById('Pn').src='https:/cdn.pixabay.com/photo/2017/10/31/07/49/horses-2904536_1280.jpg'" alt="horses">Third Image</button>
+    <h3>Question 2</h3>
+<h5>Create a webpage containing two input fields and a button. <br>
+A. Write something in the first input <br>
+B. On click of the button, the content of input one should be copied in the second input</h5>
+
+<input type="text" id="inp">  First Input <br>
+<input type="text" id="inp2"> Second Input <br>
+<button onclick="myFunc()">Change the text</button>
+<script>
+    function myFunc(){
+        document.getElementById("inp2").value=document.getElementById("inp").value;
+    }
+</script>
+    <h3>Question 3</h3>
+<h5>Create an array of objects with objects having the following properties <br>
+A. {name (string), age (number), country (string), hobbies array (string [ ] ) } <br>
+B. Write a function to display all the objects on the console</h5>
+<script>
+    console.warn("Solution 3 :");
+        let Employee =[ {
+                Name: "ViRaj", 
+                Age:25, 
+                Country: "Canada", 
+                hobbies : ["Cricket","Dancing","Reading"] 
+            },
+            {
+                Name: "Sujit", 
+                Age:33, 
+                Country: "U.S.A", 
+                hobbies : ["Running","Dancing","Reading"]
+            }, 
+            {
+                Name: "Lakshmi", 
+                Age:28, 
+                Country: "Srilanka", 
+                hobbies : ["Dancing","Reading"]
+            },
+            {
+                Name: "Anjali", 
+                Age:27, 
+                Country: "India", 
+                hobbies : ["Driving","Dancing","Swimming"]
+            },
+            {
+                Name: "Loki", 
+                Age:35, 
+                Country: "India", 
+                hobbies : ["Driving","Fighting","Swimming"]
+            } 
+        ];
+        Employee.forEach(element => {
+            console.log(element);
+        });
+</script>
+    <h3>Question 4</h3>
+<h5>Following the 3rd question <br>
+A. Write a function to display all the objects having age less than 30 <br>
+B. Write a function to display all the objects having country India</h5>
+<script>
+console.warn("Solution 5 :");
+console.warn("Solution 5(A) :");
+Employee.forEach(element => {
+    if (element.Age<30) {
+        console.log(element);
+    }
+});
+console.warn("Solution 5(B) :");
+Employee.forEach(element => {
+    if (element.Country=="India") {
+        console.log(element);
+    }
+});
+
+</script>
+</body>
+</html>
