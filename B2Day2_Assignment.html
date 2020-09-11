@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>Question 1</h3>
+Program to search for a particular character in a string
+
+<h5>Solution is in console </h5>
+<script>
+    console.warn("Solution 1 :");
+let str=prompt("Write any string","Czechoslovakia");
+// 
+let k=prompt("Which character do you to search for in your string ?","g");
+for (let index = 0; index < str.length; index++)
+ {
+    if (str[index].toUpperCase()==k.toUpperCase()) {
+        console.log("Yes character '"+k+"' is present in string "+str);
+        // console.log(str[index].toUpperCase());
+        // console.log(k.toUpperCase());
+        break;
+    }
+    else if(index==(str.length-1))
+    {
+        console.log("No character '"+k+"' is not present in string "+str);
+        
+    }
+
+    
+}
+</script>
+<h3>Question 2</h3>
+Program to convert minutes to seconds
+<h5>Solution is in console </h5>
+<script>
+    console.warn("Solution 2 :");
+    let m=Number(prompt("Write time in minutes :","60"));
+    console.log("Your minute in seconds is :"+m*60+" seconds");
+
+
+</script>
+<h3>Question 3</h3>
+Program to search for a element in a array of strings
+<h5>Solution is in console </h5>
+<script>
+    console.warn
+    ("Solution 3 :");
+let str1=prompt("Write any string sentence","Hi buddy how are you ?");
+let element=str1.split(" ");
+let ele=prompt("Which character do you to search for in your string ?","hello");
+for (let index = 0; index < element.length; index++) {
+    if (element[index].toUpperCase()==ele.toUpperCase()) {
+        console.log("Yes element '"+ele+"' is present in string "+" '"+str1+" '");
+        // console.log(str[index].toUpperCase());
+        // console.log(k.toUpperCase());
+        break;
+        console.log(str1[index].toUpperCase());
+    console.log(ele.toUpperCase());
+    }
+    else if(index==(element.length-1))
+    {
+        console.log("No element '"+ele+"' is not present in string "+" ' "+str1+" '");
+        
+    }
+    
+    
+}
+</script>
+<h3>Question 4</h3>
+Program to display only elements containing 'a' in them from a array
+<script>
+    console.warn
+    ("Solution 4 :");
+let str2=prompt("Write any string sentence","Hi buddy how are you ?");
+let element1=str2.split(" ");
+// let ele=prompt("Which character do you to search for in your string ?","hello");
+let count=0;
+for (let index = 0; index < element1.length; index++) {
+    for (let i = 0; i < element1[index].length; i++) 
+    {   
+        if (element1[index][i].toUpperCase()=='A') {
+            console.log("Element '"+element1[index]+"' has 'a' in it");
+            count++;
+            // console.log(str[index].toUpperCase());
+            // console.log(k.toUpperCase());
+            break;
+        }
+        
+    }
+     if(index==(element1.length-1)&&count==0)
+        {
+            console.log("No element has 'a' in string '"+str2+"'");
+            
+        }
+    
+}
+</script>
+<h3>Question 5</h3>
+Print an array in reverse order
+<script>
+console.warn("Solution 5 :");
+    let arr=prompt("Write any array","JavaScript");
+    for (let index = arr.length; index >=0; index--) {
+        console.log(arr[index]);
+        
+    }
+</script>
+</body>
+</html>
